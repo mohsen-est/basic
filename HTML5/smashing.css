@@ -1,0 +1,412 @@
+/****Global***/
+/* Body */
+body{
+	/*background: #f5f4fe url(aaa.png);*/
+	color: #000305;
+	font-size: 87.5%; /* base font size 14px */
+	font-family: 'Trebuchet MS', terbuchet, 'lucida sans unicode', 'lucida grande', 'lucida sans', ariyal , sans-serif;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	text-align; left;
+}
+ /* Headings */
+ h2{font-size: 1.571em;} /* 22px */
+ h3{font-size: 1.429em;} /* 20px */
+ h4{font-size: 1.286em;} /* 18px */
+ h5{font-size: 1.143em;} /* 16px */
+ h5{font-size: 1.143em;} /* 16px */
+ h6{font-size: 1em;} /* 14px */
+ 
+ h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom:0.8em;
+}
+
+/* Anchors */
+
+a{outline: 0;}
+a img{
+	border: 0px; 
+	text-decoration: none;
+}
+a:link, a:visited {
+	color: #c74350;
+	padding: 0 1px;
+	text-decoration: underline;
+}
+a:visited, a:active {
+	background-color: #c74350;
+	color: #fff; /* sefiid */
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;
+}
+
+/* Paragraphs */
+
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}  /* agar p akharin farzand yek onsor bashad ba in dastoor fasele paiin an 
+									ba onsor badi az beyn miravad */
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+::-moz-selection {background: #f6cf74; color: #fff;}
+::-selection {background: #f6fc74; color: #fff;}
+
+/**** Lists ****/
+
+ul{
+	list-style: outside disc;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+dl{margin: 0 0 1.5em 1.5em;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+/* Quotes */
+
+blockquote {font-style: italic;}
+
+/***** HTML5 tags *****/    /* baray rafe moshkele mororgarhay ghdimi k az html5 va css3 poshtibani nemikonand*/
+    
+header, section, footer, aside, nav, article, figure {display: block;}
+
+
+/**** Layout ****/
+body{
+	background: #DFDFDF;
+}
+
+
+.body {
+	clear: both;
+	margin: 0 auto;
+	width: 800px;
+}
+
+/*
+    Header 
+	************/
+	
+header#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+	background: #dfdfdf;
+}
+ /* Banner */
+ #banner h1 {
+	font-size: 3.571em;
+	line-height: 0.6;
+}
+#banner h1 a:link, #banner h1 a:visited {
+	color: #000305; /* siyah */
+	display: block;
+	font-weight: bold;
+	margin-left: 0.2em;
+	margin-bottom: 0.6em;
+	text-decoration: none;
+	width: 427px; /* taiin arz baray link daroon h */
+}
+#banner h1 a:hover, #banner h1 a:active {
+	background: none;
+	color: #C74350;
+	text-shadow: none;
+}
+#banner h1 strong {
+	font-size: 0.36em;
+	font-weight: normal;
+}	
+
+/* Main Nav */
+#banner nav {
+	background: #000305;
+	font-size: 1.143em;
+	height: 40px;
+	line-height: 30PX;
+	margin: 0 auto 2em auto;
+	padding: 0;
+	text-align: center;
+	width: 800px;
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#banner nav ul {
+	list-style: none;
+	margin: 0 0;
+	width: 800px;
+	padding-left: 0;
+}
+#banner nav li {
+	float: left;
+	display: inline;
+	margin-right: 0;
+	width: 90px;
+}
+
+#banner nav a:link, #banner nav a:visited {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	height: 30px;
+	padding: 5px 1.5em;
+}
+#banner nav a:hover, #banner nav a:active {
+	background: #c74451;
+	color: #fff;
+	text-shadow: none !important; /* az dastor !important estefade mikonim baray laghve ye sabk dehi va dadane
+									sabk dehi jadid baray ye onsor ya vizhegi dar inja in vizhegi faghat dar in halat 
+									laghv mishvad */
+}
+
+#banner nav li:first-child a {
+	border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+/* 
+	Featured
+	************/
+	
+aside#featured {
+	background: #ccc;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px; /*  Nokte: mamolan dastor padding baese afzayesh size onsor mishavad va shayad arze onsor afzayesh yabad
+								k dobare be onsore marbute width midahim*/
+	width: 760px; /* alan ba in dastor width onsor ma be halat ghabl bargasht yanii 800px */
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#featured figure {
+	float: right;
+	border: 2px solid #eee;
+	width: 248px;
+	margin: 0.726em 2em 0 5em;
+}
+#featured figure img {
+	display: block;
+	float: right;
+}
+#featured h2 {
+	color: #c74451;
+	font-size: 1.714em;
+	margin-bottom: 0.333em;
+}
+#featured h3{
+	font-size: 1.429em; 
+	margin-bottom: 0.5em;
+}
+#featured h3 a:link, #featured h3 a:visited {
+	color: #000305;
+	text-decoration: none;
+}
+#featured h3 a:hover, #featured h3 a:active {
+	color: #fff;
+}
+
+/* 
+	Body 
+	***********/
+	
+section#content {
+	background: #fff;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px 20px;
+	width: 760px;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+ol#posts-list {
+	list-style: none;
+	margin: 0;
+}
+#posts-list .hentry {
+	padding-left: 200px; /* fasele daruni be tag article dadim ta baad betavanim tag footer ra absolut konim*/
+	position: relative;
+}
+#posts-list footer{
+	position: absolute;
+	top: 1.5em;
+	left: 10px;
+	width: 190px;
+}
+ .hentry {
+	border-bottom: 1px solid #eee;
+	padding: 1.5em 0;
+}
+li:last-child .hentry, #content >.hentry {  /* bray az beyn bordane fasele ezafi akharin farzand li yani akharin hentry 
+											va hamchenin  az beyn bordan border an... alamat > yani farzand mostaghim */
+	border: 0;
+	margin: 0;
+}
+#content>.hentry {
+	padding: 1em 0;
+}
+h2.entry-title {
+	font-size: 1.429em;
+	margin-bottom: 0;
+	margin-top: 2px;
+}
+.entry-title a:link, .entry-title a:visited {
+	text-decoration: none;
+}
+div.entry-content {
+	margin-top: -10px;
+}
+.hentry footer{
+	margin-bottom: 2em;
+}
+#posts-list footer address {
+	display: block;
+}
+
+#posts-list .hentry:hover {
+	background: #c64350;
+	color: #fff;
+}
+#posts-list .hentry:hover a:link, #posts-list .hentry:hover a:visited { /* dar in halat baray in neveshtim .hentry:hover chonke 
+																		mikhastim faghat dar in halat linkha ba in rang neshan
+																			dade beshavand agar neminveshtim link ha kolan ba in rang
+																			namayash daade mishodand */
+	color: #f6cf74;
+	text-shadow: 1px 1px 1px #333;
+}
+
+/* 
+     Extras
+	 *************/
+section#extras {
+	margin: 0 auto 3em auto;
+	background: #dfdfdf;
+	overflow: hidden;
+}
+#extras ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#extras li {
+	border-bottom: 1px solid #fff;
+	
+}
+#extras h2{
+	color: #c74350;
+	font-size: 1.429em;
+	margin-bottom: .25em;
+	padding: 0 3px;
+}
+#extras a:link, #extars a:visited {
+	text-decoration: none;
+	display: block;
+	color: #444; /* meshki kam rang*/
+	border-bottom: 1px solid #f4e3e3; /* ghermez kam rang */
+	padding: .6em .25em;
+}
+
+#extras div.blogroll {
+	float: left;
+	width: 615px;
+}
+#extras .blogroll li {
+	float: left;
+	width: 185px; /* ba dadane yek arze khub be li ha hamegi anha dar knar ham ghara migirand*/
+	margin-right: 20px;
+}
+#extras div.social {
+	float: right;
+	width: 175px;
+}
+
+/* Social Network */
+
+#extras div[class='social'] a {  /* be dalile barkhi moshkelat dar bazi az browserha be jay div.social in ra nveshtim*/
+	background-repeat: no-repeat;
+	background-position: 3px 4px;  /* baray taiin mahal gharargiri ax pas zamine*/
+	padding-left: 38px;
+}
+
+/* Icons */
+.social a[href*='facebook.com'] { background-image: url(facebook.png);}
+.social a[href*='delicious.com'] { background-image: url(delicious.png);}
+.social a[href*='website.com'] { background-image: url(rss.png);}
+.social a[href*='twitter.com'] { background-image: url(twitter.png);}
+.social a[href*='digg.com'] { background-image: url(digg.png);}
+.social a[href*='last.fm.es'] { background-image: url(lastfm.png);}
+
+/* 
+	About
+	************/
+	
+address#about {
+	background: #fff;
+	font-style: normal;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px;
+	width: 760px;
+	text-align: left;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#about span.primary {
+	float: left;
+	width: 165px;
+}
+#about .primary strong {
+	font-size: 1.286em;
+	color: #c64350;
+	display: block;
+}
+#about a.url:link, #about a.url:visited {text-decoration: none;}
+
+#about span.bio {float: right;  width: 500px;}
+
+/* footer */
+#contentinfo {
+	padding-bottom: 2em;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
